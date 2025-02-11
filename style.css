@@ -1,125 +1,87 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   background-color: #000000;
-}
-
+/* إعداد عام */
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-    text-align: right;
-}
-
-/* تنسيق شريط التنقل */
-.nav {
-    color: #000000;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-
- .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
- .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-  
-}
-
- .nav-links {
-    display: flex;
-    justify-content: space-between; /* Distribute items to opposite ends */
-    align-items: center; /* Align items vertically */
-    padding: 0;
+    background-color: #111;
+    color: white;
     margin: 0;
-    list-style: none;
-
-}
-
- .nav-links li {
-    margin-left: 20px;
-    color: #ffffff;
-        justify-content: space-between;
-
-}
-
- .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
- /* .nav-links a:hover {
-    color: #f39c12;
-} */
-
-/* تنسيق المحتوى */
-.content {
-    margin: 50px auto;
-    padding: 0 20px;
+    padding: 0;
     text-align: center;
 }
 
-.content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+/* تنسيق الهيدر */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: black;
+    position: sticky;
+    top: 0;
 }
 
-.content p {
-    font-size: 18px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li .btn {
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* تنسيق العنوان الرئيسي */
+.hero {
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+}
 
 /* تنسيق معرض الصور */
 .gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
+.item {
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.item img {
     width: 100%;
-    height: 10%;
+    border-radius: 10px;
 }
 
-.image-container {
-    width: calc(33.33% - 10px); /* 3 صور في الصف مع تباعد بينها */
-    text-align: center;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* حواف مستديرة للصور */
-}
-
-.image-container p {
+.item p {
     margin-top: 10px;
-    font-size: 16px;
-    color: #ffffff;
-}
-
-h1{
-    color: #ffffff;
-text-align: center;
-
-}
-p{
-    color: #ffffff;
-    text-align: center;
+    font-size: 14px;
 }
